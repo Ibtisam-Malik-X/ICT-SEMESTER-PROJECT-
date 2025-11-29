@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Age Gym | Unsplash Primal Power</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+     <link rel="icon" type="image/x-icon" href="pic1.jpg">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">STONE AGE </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Our Tribe</a></li>
+            <li><a href="#calculator"> Core Diet </a></li>
+            <li><a href="#contact" class=>Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="video-overlay"></div>
+        <!-- Replace src with your local file -->
+        <video autoplay muted loop playsinline class="back-video">
+            <source src="https://videos.pexels.com/video-files/4761426/4761426-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h1 class="hidden"><span class="neon-text">Primal | Titan | Iron Clad </span></h1>
+            <p class="hidden">Welcome to the Stone Age Gym , to Unleash your primal power and transform your body with hardcore, results-driven training.</p>
+            <a href="#calculator" class="neon-button hidden">START EVOLUTION</a>
+        </div>
+    </section>
+
+    <!-- About Us / Trainers Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title hidden">MEET THE <span class="neon-text">MASTERS</span></h2>
+            
+            <div class="trainers-grid">
+                <!-- Trainer 1 -->
+                <div class="trainer-card hidden">
+                    <div class="img-frame">
+                        <img src="pic.jpg" alt="Head Trainer" height="500">
+                    </div>
+                    <h3>ATHLETIC "IBTISAM MALIK"</h3>
+                    <span class="role">Head Bodybuilding Trainer</span>
+                    <p>I Trainer Ibtisam Malik having experience of 5 years as a trainer with Specializing in core strength.Rex builder monsters, not a weak builder.</p>
+                    <div class="trainer-socials">
+                        <a href="https://www.instagram.com/itx_ibtisam_x?igsh=eXh2YmY4cGJ3bTNp"target="itx_ibtisam_x?igsh"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/XIbtisamMalik00?t=wVJHAU6RmPnC0Ra8FvuPlQ&s=09"target="itx_ibtisam_x?igsh"><i class="fab fa-twitter"></i></a> <!-- X icon -->
+                        <a href="https://www.facebook.com/share/1GshGM4922/"target="itx_ibtisam_x?igsh"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="trainer-card hidden">
+                    <div class="img-frame">
+                        <img src="pic3.png" alt="Crossfit Coach" height="500">
+                    </div>
+                    <h3>SHREDDED " ABDULLAH"</h3>
+                    <span class="role">Elite CrossFit & Mobility</span>
+                    <p>I Coach Abdullah having experience of 4 years Functional fitness expert.Focuses on explosive power, endurance, and injury-proof mobility.</p>
+                    <div class="trainer-socials">
+                        <a href="https://www.instagram.com/muhammadabdullah_arain?igsh=MTlvZjU2b2M4eWlyYg=="target="muhammadabdullah_arain?igsh"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-abdullah-b13071399?utm_source=share_via&utm_content=profile&utm_medium=member_android"target="muhammad-abdullah-b13071399?utm_source"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/share/1Cf3SN48Z2/"target="4761426-hd_1920_1080_25fps"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Diet Calculator Section -->
+    <section id="calculator" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title hidden">DIET <span class="neon-text">PROTOCOL</span></h2>
+            <p class="section-subtitle hidden">Input your stats. We generate the fuel.</p>
+            
+            <div class="calculator-wrapper hidden">
+                <form id="dietForm">
+                    <div class="calc-grid">
+                        <div class="input-group">
+                            <input type="number" id="weight" required placeholder=" ">
+                            <label>Weight (kg)</label>
+                        </div>
+                        <div class="input-group">
+                            <select id="goal">
+                                <option value="lose">Fat Loss</option>
+                                <option value="maintain">Maintain Physique</option>
+                                <option value="gain">Muscle Gain</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="neon-button full-width">GENERATE PLAN</button>
+                </form>
+
+                <div id="dietResult" class="diet-output">
+                    <!-- Results appear here via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aesthetic Contact Section -->
+    <section id="contact" class="section-padding footer-contact">
+        <div class="container">
+            <div class="contact-box hidden">
+                <div class="contact-info">
+                    <h2>JOIN THE <span class="neon-text">TRIBE</span></h2>
+                    <p>Stop waiting ! Consistency and Dicipline You Want.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Fast University Faisalabad </span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>stoneagegym@0008gmail.com</span>
+                    </div>
+                </div>
+                
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" required placeholder=" ">
+                        <label>Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required placeholder=" ">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea required placeholder=" "></textarea>
+                        <label>Message</label>
+                    </div>
+                    <button type="submit" class="neon-button">TRANSMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stone Age Gym. Forged in Steel.</p>
+    </footer>
+
+    <script src="view.js"></script>
+</body>
+</html>
